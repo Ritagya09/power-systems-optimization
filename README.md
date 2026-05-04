@@ -6,6 +6,14 @@ Built with [PyPSA](https://pypsa.org/) and the [HiGHS](https://highs.dev/) open-
 
 ---
 
+## 🎯 About This Project
+
+This project was developed to understand how power grid operators make real-time and long-term decisions. I built both models from scratch using PyPSA to explore how MILP optimization drives generator scheduling and investment planning in modern energy systems.
+
+The unit commitment model simulates a 24-hour dispatch schedule across 6 generator types, while the capacity expansion model evaluates whether new solar, wind, gas, or battery storage investments are economically justified under a 30% demand growth scenario.
+
+---
+
 ## 📌 Project Overview
 
 Modern power grids face two fundamental optimization problems:
@@ -132,6 +140,16 @@ Where $a_g$ is the annualized capital cost using Capital Recovery Factor (CRF).
 
 ---
 
+## 💡 Key Learnings
+
+- How MILP binary variables model generator on/off decisions — a plant can't run at 10% capacity, it's either on or off
+- Why coal runs as baseload (lowest marginal cost at $30/MWh) while oil peakers are last resort ($90/MWh)
+- How annualized CAPEX using the Capital Recovery Factor lets us fairly compare one-time build costs against annual operating costs
+- How renewable capacity factors (solar peaking at 0.78 midday, wind steadier at 0.25–0.42) directly shape the dispatch schedule
+- Why the optimizer avoids new investment when existing capacity is sufficient — capital costs only make sense if they reduce operating costs enough to justify them
+
+---
+
 ## 🛠️ Tools & Libraries
 
 | Tool | Purpose |
@@ -156,6 +174,7 @@ Where $a_g$ is the annualized capital cost using Capital Recovery Factor (CRF).
 ## 👩‍💻 Author
 
 **Ritagya Chitkara**
+Electrical Engineering student interested in power systems and energy optimization.
 - GitHub: [@Ritagya09](https://github.com/Ritagya09)
 
 ---
