@@ -1,0 +1,7 @@
+pypsa
+linopy
+highspy
+pandas
+matplotlib
+numpy
+openpyxl
