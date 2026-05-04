@@ -1,0 +1,7 @@
+name,type,capacity_mw,marginal_cost,startup_cost,min_up_time,min_down_time,ramp_rate,capital_cost
+Coal_Plant,coal,500,30,5000,6,6,50,1500000
+Gas_Plant_1,gas,300,55,1500,2,2,150,900000
+Gas_Plant_2,gas,200,60,1500,2,2,100,900000
+Oil_Peaker,oil,100,90,500,1,1,100,600000
+Solar_Farm,solar,250,0,0,0,0,250,800000
+Wind_Farm,wind,200,0,0,0,0,200,1200000
